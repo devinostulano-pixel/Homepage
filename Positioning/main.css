@@ -1,0 +1,100 @@
+body {
+    background: rgb(95, 130, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.block {
+    background: rgb(0, 193, 48);
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 20px;
+}
+
+.inline {
+    background: rgb(1, 69, 0);
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height:100px;
+}
+
+.inline-block {
+    background: lightblue;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.content-box {
+    background: rgb(235, 179, 179);
+    padding: 40px;
+    border: 5px solid red;
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.border-box {
+    background: rgb(235, 179, 179);
+    padding: 40px;
+    border: 5px solid red;
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.square {
+    background: green;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.relative {
+    background: white;
+    position: relative;
+    top: -50px;
+    left: 250px;
+}
+
+.fixed {
+    background: lightsalmon;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+}
+
+.sticky {
+    background: lightcyan;
+    position: sticky;
+    bottom: 0;
+}
+
+.absolute {
+    background: lightcyan;
+    position: absolute;
+    top: 1200px;
+    right: 50px;
+}
+
+.smiley {
+    background: rgb(229, 217, 127) ;
+    width: 200px ;
+    height: 200px ;
+    margin: 50px;
+    position: relative;
+}
+
+.eye {
+    background: rgb(27, 77, 31);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
