@@ -3,63 +3,63 @@
     font-size: 250px;
     margin-bottom: 0px;
     margin-top: 20px;
-    letter-spacing: -20px;
-    color: rgb(8, 43, 22);
+    letter-spacing: -200px;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-weight: normal;
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    letter-spacing: -2px;
-    font-weight: normal;
-    margin-left: -15%;
-    margin-right: -15%;
+    letter-spacing: -50px;
+    font-weight: bold;
+    font-size: 500px;
 }
 
 h2{
     font-weight:normal;
-    font-size: 50px;
-    color: rgb(8, 43, 22);
-    margin-left: -10%;
-    margin-right:-10%;
-    text-align: center;
+    font-size: 200px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    letter-spacing: -10px;
+
 
 }
 
 body {
-    color: #e0e69c;
+    color: #ffffff;
     font-family: Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     padding: 30px;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: justify;
-    font-size: 25px;
-    background: rgb(0, 136, 59)
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    font-size: 45px;
+    background-color: rgb(0, 31, 25);
 }
 
 a {
     font-weight: lighter;
-    color: rgb(8, 43, 22);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 hr {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .why {
-    text-align: center;
-    font-size: 100px;
-    color: #e0e69c;
-    font-weight: normal;
+    text-align: left;
+    font-size: 250px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: -20px;
 }
 
 .list {
     font-weight:normal;
-    font-size: 50px;
-    color: #e0e69c;
+    font-size: 35px;
+    color: #ffffff;
     margin-left: 0%;
     margin-right: 0%;
     text-align: left;
@@ -71,6 +71,32 @@ hr {
     right: -100px;
     bottom: 10px;
     rotate: 0deg;
-    opacity: 50%;
+    opacity: 100%;
 }
 
+.alphabet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.alphabet2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background: white;
+    border: rgb(255, 255, 255) solid;
+    border-radius: 100px;
+
+}
+
+
+.SC1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 10px;
+}

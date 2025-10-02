@@ -1,0 +1,112 @@
+body {
+    background:  rgb(116, 70, 1);
+}
+
+.start {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+.button1 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 300px;
+    left: 450px;
+    opacity: 0%;
+}
+
+.button2 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 200px;
+    left: 550px;
+    opacity: 0%;
+}
+
+.button3 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 250px;
+    left: 600px;
+    opacity: 0%;
+}
+
+.button4 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 300px;
+    left: 625px;
+    opacity: 0%;
+}
+
+.button5 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 300px;
+    left: 700px;
+    opacity: 0%;
+}
+
+.button6 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 300px;
+    left: 600px;
+    opacity: 0%;
+}
+
+.button7 {
+    font-size: 100px;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 300px;
+    left: 500px;
+    opacity: 0%;
+}
+
+.button8 {
+    font-size: 100px;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 200px;
+    left: 500px;
+    opacity: 0%;
+}
+
+.button9 {
+    font-size: 100px;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 300px;
+    left: 400px;
+    opacity: 0%;
+}

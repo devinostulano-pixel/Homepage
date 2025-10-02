@@ -1,0 +1,34 @@
+body {
+    background: lightblue;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    background: lightblue;
+    padding: 10px;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /*
+    flex-direction will determine the main axis:
+    row = horizontal main axis (default)
+    column = vertical main axis
+    */
+}
+
+
+.item {
+    background: bisque;
+    padding: 10px;
+    border: 1px solid;
+    width: 200px;
+}
