@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="main.css"> 
+    <title>Houdini</title>
+    
+</head>
+<body>
+    <h1 id="title">Make Me Disappear.</h1>
+    
+    <div class="slider-container">
+        <label for="red">Red: <span id="red-value">0</span></label>
+        <input type="range" id="red" min="0" max="255" value="0">
+        
+        <label for="green">Green: <span id="green-value">0</span></label>
+        <input type="range" id="green" min="0" max="255" value="0">
+        
+        <label for="blue">Blue: <span id="blue-value">0</span></label>
+        <input type="range" id="blue" min="0" max="255" value="0">
+    </div>
+    
+    <div id="color-display">Current RGB: rgb(0, 0, 0)</div>
+    
+    <button onclick="resetSliders()">Reset Sliders to Black</button>
+    <button onclick="changeTitleColor()">Change Color</button>
+    
+    <script>
+        const redSlider = document.getElementById('red');
+        const greenSlider = document.getElementById('green');
+        const blueSlider = document.getElementById('blue');
+        const redValue = document.getElementById('red-value');
+        const greenValue = document.getElementById('green-value');
+        const blueValue = document.getElementById('blue-value');
+        const colorDisplay = document.getElementById('color-display');
+        const title = document.getElementById('title');
+        
+        function updateColor() {
+            const r = redSlider.value;
+            const g = greenSlider.value;
+            const b = blueSlider.value;
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+            redValue.textContent = r;
+            greenValue.textContent = g;
+            blueValue.textContent = b;
+            colorDisplay.textContent = `Current RGB: rgb(${r}, ${g}, ${b})`;
+        }
+        
+        function resetSliders() {
+            redSlider.value = 0;
+            greenSlider.value = 0;
+            blueSlider.value = 0;
+            updateColor();
+        }
+        
+        function changeTitleColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            title.style.color = `rgb(${r}, ${g}, ${b})`;
+        }
+        
+        redSlider.addEventListener('input', updateColor);
+        greenSlider.addEventListener('input', updateColor);
+        blueSlider.addEventListener('input', updateColor);
+        
+        updateColor();
+        changeTitleColor();
+    </script>
+</body>
+</html>
+
