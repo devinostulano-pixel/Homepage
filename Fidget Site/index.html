@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fidget toy</title>
+
+    <br>
+    <br>
+    <br>
+    
+</head>
+<body>
+    <h1>fidget toy</h1>
+    <div class="grid" id="grid"></div>
+    <button id="reset">Reset</button>
+
+    <script>
+        const grid = document.getElementById('grid');
+        const resetBtn = document.getElementById('reset');
+        let currentHue = 0;
+        let complementHue = 180;
+        let isDragging = false;
+
+        for (let i = 0; i < 225; i++) {
+            const circle = document.createElement('div');
+            circle.classList.add('circle');
+            circle.isToggled = false;
+            circle.style.backgroundColor = `hsl(${currentHue}, 100%, 50%)`;
+            circle.addEventListener('mousedown', startDrag);
+            circle.addEventListener('mouseover', dragToggle);
+            grid.appendChild(circle);
+        }
+
+        function toggleCircle(circle) {
+            circle.isToggled = !circle.isToggled;
+            updateCircleColor(circle);
+        }
+
+        function updateCircleColor(circle) {
+            const hue = circle.isToggled ? complementHue : currentHue;
+            circle.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
+        }
+
+        function startDrag(event) {
+            isDragging = true;
+            toggleCircle(event.target);
+        }
+
+        function dragToggle(event) {
+            if (isDragging && event.target.classList.contains('circle')) {
+                toggleCircle(event.target);
+            }
+        }
+
+   
+
+        grid.addEventListener('dragstart', (event) => {
+            event.preventDefault();
+        });
+
+        resetBtn.addEventListener('click', () => {
+            currentHue = Math.floor(Math.random() * 360);
+            complementHue = (currentHue + 180) % 360;
+            const circles = document.querySelectorAll('.circle');
+            circles.forEach(circle => {
+                circle.isToggled = false;
+                updateCircleColor(circle);
+            });
+        });
+    </script>
+</body>
+</html>
