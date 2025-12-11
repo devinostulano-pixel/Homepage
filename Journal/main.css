@@ -1,0 +1,45 @@
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: -2.5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 150px;
+    margin-right: 100px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -5px;
+    font-family: helvetica;
+}
+
+p {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: -2.5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(2, 73, 57);
+}
+
+
